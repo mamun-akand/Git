@@ -1,0 +1,17 @@
+git branch		// Name of all branch, check branch
+git branch -r		// Git remote branch	
+git branch -a 		// Git Local & Remote branch
+
+git branch feature1	// Create branch, when creating a branch, it makes a copy of the master branch same as master 
+			// Branch theke add, commit kore ber hote hobe. then master theke auto delete hobe
+git checkout feature1	// Switch to branch feature1 
+git checkout master	// Switch to branch master
+
+git merge feature1	// You have to stay in destination branch to merge the other branch like feature
+git branch -d feature	// To delete feature1 branch
+
+git push -u origin feature2	//push branch
+
+git checkout -b feature3	// create branch and check out at a time
+
+git clone <link>		// to clone to colloborate. [Fork needed befor contributing a project, then clone]

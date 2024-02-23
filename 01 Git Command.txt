@@ -1,0 +1,36 @@
+git config --list 	//Everything of git configuration
+git config --global user.name "mamun-akand" 			//git id confiq
+git config --global user.email "mamun.crick25@gmail.com"	//git email config
+
+working directory  --> stagging area --> Local Repo --> Remote Repo
+Folder (git init>  --> git add       --> git commit --> git push
+
+stagging -- changes control
+commit   -- version control
+
+git status 		//to know conditoin of directory  or folder, checking git repo or not
+git init 		//git initializing to add folder to stagging area
+
+git add . 		//to stage all file
+
+git diff test.txt  	//check difference
+git restore test.txt 	//unstage/ go back to the previous
+
+git commit -m "message" //to commit in local Repo
+git log 		//shows all commit list, [version list]
+git log --oneline	//shows commit in short [version list in short]
+git checkout d6faca4	//Checkout commit version using unique code
+git checkout master	//go to master/main version
+	PS E:\Git\Test> git log --oneline
+	c0ff674 (HEAD -> master) age is added 		//head means current, master means main
+	d6faca4 Okay all
+	PS E:\Git\Test> git checkout d6faca4  		//to check previous commit by commit unique number
+git show commit_id / git show / git show head		//shows the details of commit 
+
+
+//Remote Connect
+git remote -v								// it checks if remote repo is connected to local repo. If connected sends URL, else nothing
+git remote add origin https://github.com/mamun-akand/test-git.git	// copied from gitHub repo to connect with local repo
+git push -u origin master	(git push)  -- okay			// copied from gitHub repo to push local repo to global repo(gitHub) //branch should be master, so main changed to master
+
+git pull origin master		(git pull)  -- okay			// to pull from global directory //branch master, normally main thake // git pull    dilei kaaj hoy
